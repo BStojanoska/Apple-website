@@ -1,0 +1,273 @@
+@font-face {
+    font-family: "Liberation Sans";
+    src: url(fonts/liberation_sans/LiberationSans-Regular.ttf) format('truetype');
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Liberation Sans';
+}
+
+/* HEADER CSS */
+header {
+    background-color:#658CAC;
+    padding-top: 10px;
+}
+
+main {
+    background-color: #BFD6DE;
+}
+
+#apple_logo {
+    width: 30px;
+    margin: 5px;
+}
+
+#logo {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+}
+
+nav {
+    float: right;
+    width: 65%;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.1em;
+    display: inline;
+    padding: 5px;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #B4D4EB;
+}
+
+#big_pic {
+    text-align: center;
+    padding: 20px;
+}
+
+#big_pic > img {
+    width: 500px;
+}
+
+#header_wrapper div {
+    float: left;
+    width: 25%;
+    margin: 0;
+    text-align: center;
+}
+
+#header_wrapper p {
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+#header_wrapper i, img {
+    margin: 40px 40px 20px 40px;
+}
+
+#mini_air {
+    background-color: #DBDBDB;
+}
+
+#mini_iPad {
+    background-color: #BDBAAB;
+}
+
+#mini_iPhoneX {
+    background-color: #9CE0D3;
+}
+
+#about {
+    background-color: #9FAEC1;
+    text-transform: uppercase;
+}
+
+#about > img {
+    width: 40px;
+}
+
+#about > p {
+    margin-top: 4px;
+}
+/* END OF HEADER CSS */
+
+/* MAIN CSS */
+main > div {
+    clear: both;
+}
+
+main h2 {
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+main p {
+    text-align: justify;
+    color: white;
+    text-indent: 10px;
+    margin: 40px 70px;
+    line-height: 1.7em;
+}
+
+main img {
+    text-align: center;
+}
+
+/* Using flex box to match the height of the two divs in the row */
+#first_section {
+    display: flex;
+    flex-direction: row;
+}
+
+#first_section > div {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#first_section div:nth-child(2n) {
+    background-color: #9FAEC1;
+}
+
+#first_section img {
+    width: 250px;
+    max-width: 50%;
+}
+
+/* Using flex box to match the height of the two divs in the row */
+#second_section {
+    display: flex;
+    flex-direction: row;
+}
+
+#second_section > div {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#second_section div:first-child {
+    background-color: #BDBAAB;
+}
+
+#second_section img {
+    width: 250px;
+    max-width: 50%;
+}
+
+/* Using flex box to match the height of the two divs in the row */
+#third_section {
+    display: flex;
+    flex-direction: row;
+}
+
+#third_section > div {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#third_section div:nth-child(2n) {
+    background-color: #FAA589;
+}
+
+#third_section img {
+    width: 250px;
+    max-width: 50%;
+}
+
+/* Added flex box in order to set the divs in a single row and not to overlap with the footer */
+#fourth_section {
+    display: flex;
+    flex-direction: row;
+}
+
+#fourth_section > div {
+    width: 33.33%;
+    float: left;
+}
+
+#fourth_section h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#fourth_section > :first-child {
+    background-color: #9FAEC1;
+}
+
+#fourth_section > div:nth-child(2n) {
+    background-color: #BDBAAB;
+}
+
+#fourth_section > :last-child {
+    background-color: #9CE0D2;
+}
+/* END OF MAIN CSS */
+
+/* FOOTER CSS */
+#social {
+    background-color: #658CAD;
+    padding: 30px 0 30px 0;
+}
+
+/* Next 3 selectors in order to make the social icons centered on the social div */
+#social > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.center {
+    margin: auto;
+}
+
+.center a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: left;
+}
+/* End */
+
+#social img, i {
+    margin: 50px;
+    display: inline-block;
+}
+
+footer i {
+    color: #B4D4EB;
+}
+
+footer img {
+    width: 32px;
+}
+
+footer > div:last-child {
+    background-color: #5A4657;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+/* END OF FOOTER CSS */
